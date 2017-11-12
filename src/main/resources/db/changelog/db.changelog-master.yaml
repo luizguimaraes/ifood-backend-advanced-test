@@ -1,0 +1,100 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: luiz.guimaraes
+      changes:
+        - createTable:
+            tableName: weather
+            columns:
+              - column:
+                  name: id
+                  type: int
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+                    unique: true
+              - column:
+                  name: music_genre
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: temperature_interval_start
+                  type: double
+                  constraints:
+                    nullable: false
+              - column:
+                  name: temperature_interval_end
+                  type: double
+                  constraints:
+                    nullable: false
+  - changeSet:
+      id: 2
+      author: luiz.guimaraes
+      changes:
+        - insert:
+            tableName: weather
+            columns:
+              - column:
+                  name: name
+                  value: freezing
+              - column:
+                  name: music_genre
+                  value: classical
+              - column:
+                  name: temperature_interval_start
+                  value: -273.15
+              - column:
+                  name: temperature_interval_end
+                  value: 10
+        - insert:
+            tableName: weather
+            columns:
+              - column:
+                  name: name
+                  value: chilly
+              - column:
+                  name: music_genre
+                  value: rock
+              - column:
+                  name: temperature_interval_start
+                  value: 10
+              - column:
+                  name: temperature_interval_end
+                  value: 15
+        - insert:
+            tableName: weather
+            columns:
+              - column:
+                  name: name
+                  value: average
+              - column:
+                  name: music_genre
+                  value: pop
+              - column:
+                  name: temperature_interval_start
+                  value: 15
+              - column:
+                  name: temperature_interval_end
+                  value: 30
+        - insert:
+            tableName: weather
+            columns:
+              - column:
+                  name: name
+                  value: hot
+              - column:
+                  name: music_genre
+                  value: party
+              - column:
+                  name: temperature_interval_start
+                  value: 30
+              - column:
+                  name: temperature_interval_end
+                  value: 100000000000000000000000000000000
