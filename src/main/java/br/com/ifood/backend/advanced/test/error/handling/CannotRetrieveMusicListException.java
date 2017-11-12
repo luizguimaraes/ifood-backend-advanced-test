@@ -5,7 +5,7 @@ import static org.springframework.http.HttpStatus.SERVICE_UNAVAILABLE;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * Exception lanÁada caso ocorra algum erro ao acessar o serviÁo de sugest„o de
+ * Exception lan√ßada caso ocorra algum erro ao acessar o servi√ßo de sugest√£o de
  * playlist.
  */
 @ResponseStatus(value = SERVICE_UNAVAILABLE, reason = "cannot retrieve music for the sugested playlist.")

@@ -19,9 +19,9 @@ import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
 
 /**
- * Controller respons·vel por expor os serviÁos de sugest„o de playlist.
+ * Controller respons√°vel por expor os servi√ßos de sugest√£o de playlist.
  */
-@Api("Sugest„o de Paylist")
+@Api("Sugest√£o de Paylist")
 @RestController
 public class PlaylistSugestionController {
 
@@ -33,20 +33,20 @@ public class PlaylistSugestionController {
 	private PlaylistService playlistService;
 
 	/**
-	 * ServiÁo respons·vel por sugerir uma playlist baseada na temperatura atual de
+	 * Servi√ßo respons√°vel por sugerir uma playlist baseada na temperatura atual de
 	 * uma determinada coordenada geografica.
 	 * 
 	 * @param lat
 	 *            a latitude dessa coordenada.
 	 * @param lon
 	 *            a longitude dessa coordenada.
-	 * @return uma playlist com as m˙sicas sugeridas.
+	 * @return uma playlist com as m√∫sicas sugeridas.
 	 */
-	@ApiOperation(value = "Sugest„o de Playlist baseada em coordenadas geogr·ficas", produces = APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Sugest√£o de Playlist baseada em coordenadas geogr√°ficas", produces = APPLICATION_JSON_VALUE)
 	@ApiResponses({ @ApiResponse(code = 200, message = "OK", response = Playlist.class),
-			@ApiResponse(code = 503, message = "ServiÁo IndisponÌvel"),
-			@ApiResponse(code = 400, message = "Coordenadas Inv·lidas"),
-			@ApiResponse(code = 404, message = "N„o foi possÌvel sugerir") })
+			@ApiResponse(code = 503, message = "Servi√ßo Indispon√≠vel"),
+			@ApiResponse(code = 400, message = "Coordenadas Inv√°lidas"),
+			@ApiResponse(code = 404, message = "N√£o foi poss√≠vel sugerir") })
 	@RequestMapping(value = "/latlon", method = GET)
 	public Playlist playlistByLatLong(@ApiParam(value = "Latitude", required = true) @RequestParam final double lat,
 			@ApiParam(value = "Longitude", required = true) @RequestParam final double lon) {
@@ -54,18 +54,18 @@ public class PlaylistSugestionController {
 	}
 
 	/**
-	 * ServiÁo respons·vel por sugerir uma playlist baseada na temperatura atual de
+	 * Servi√ßo respons√°vel por sugerir uma playlist baseada na temperatura atual de
 	 * uma determinada cidade.
 	 * 
 	 * @param cityName
 	 *            o nome da cidade.
-	 * @return uma playlist com as m˙sicas sugeridas.
+	 * @return uma playlist com as m√∫sicas sugeridas.
 	 */
-	@ApiOperation(value = "Sugest„o de Playlist baseada no nome de uma cidade", produces = APPLICATION_JSON_VALUE)
+	@ApiOperation(value = "Sugest√£o de Playlist baseada no nome de uma cidade", produces = APPLICATION_JSON_VALUE)
 	@ApiResponses({ @ApiResponse(code = 200, message = "OK", response = Playlist.class),
-			@ApiResponse(code = 503, message = "ServiÁo IndisponÌvel"),
-			@ApiResponse(code = 400, message = "Cidade Inv·lida"),
-			@ApiResponse(code = 404, message = "N„o foi possÌvel sugerir") })
+			@ApiResponse(code = 503, message = "Servi√ßo Indispon√≠vel"),
+			@ApiResponse(code = 400, message = "Cidade Inv√°lida"),
+			@ApiResponse(code = 404, message = "N√£o foi poss√≠vel sugerir") })
 	@RequestMapping(value = "/city", method = GET)
 	public Playlist playlistByCityName(
 			@ApiParam(value = "Nome da Cidade", required = true) @RequestParam final String cityName) {

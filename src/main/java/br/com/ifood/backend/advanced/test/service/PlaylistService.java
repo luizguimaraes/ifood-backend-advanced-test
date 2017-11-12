@@ -7,19 +7,19 @@ import br.com.ifood.backend.advanced.test.model.Playlist;
 import br.com.ifood.backend.advanced.test.model.Track;
 
 /**
- * Serviço responsável por sugerir {@link Playlist}.
+ * ServiÃ§o responsÃ¡vel por sugerir {@link Playlist}.
  */
 public interface PlaylistService {
 
 	/**
-	 * Sugere uma {@link Playlist} baseado em uma lista de gêneros.
+	 * Sugere uma {@link Playlist} baseado em uma lista de gÃªneros.
 	 * 
 	 * @param genreNames
-	 *            uma lista de gêneros musicais.
+	 *            uma lista de gÃªneros musicais.
 	 * 
-	 * @return uma {@link Playlist} com {@link Track}s dos gêneros passados.
+	 * @return uma {@link Playlist} com {@link Track}s dos gÃªneros passados.
 	 * @throws CannotRetrieveMusicListException
-	 *             caso não seja possível obter uma {@link Playlist}.
+	 *             caso nÃ£o seja possÃ­vel obter uma {@link Playlist}.
 	 */
 	Playlist retrievePlaylist(List<String> genreNames) throws CannotRetrieveMusicListException;
 

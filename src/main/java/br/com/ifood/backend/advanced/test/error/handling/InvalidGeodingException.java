@@ -5,7 +5,7 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * Exception lanÁada caso as coordadas geogr·ficas n„o sejam v·lidas.
+ * Exception lan√ßada caso as coordadas geogr√°ficas n√£o sejam v√°lidas.
  */
 @ResponseStatus(value = BAD_REQUEST, reason = "invalid geocoding.")
 public class InvalidGeodingException extends RuntimeException {

@@ -30,8 +30,8 @@ import br.com.ifood.backend.advanced.test.model.Playlist;
 import br.com.ifood.backend.advanced.test.model.Track;
 
 /**
- * Implementação de {@link PlaylistService} que obtém sugestões de músicas
- * através da API do Spotify.
+ * ImplementaÃ§Ã£o de {@link PlaylistService} que obtÃ©m sugestÃµes de mÃºsicas
+ * atravÃ©s da API do Spotify.
  */
 @Service
 class SpotifyPlaylistService implements PlaylistService {
@@ -61,7 +61,7 @@ class SpotifyPlaylistService implements PlaylistService {
 	}
 
 	/**
-	 * Utiliza o serviço de recomendação do Spotify para sugerir {@link Track}s.
+	 * Utiliza o serviÃ§o de recomendaÃ§Ã£o do Spotify para sugerir {@link Track}s.
 	 * 
 	 * @see https://developer.spotify.com/web-api/console/get-recommendations/
 	 */
@@ -102,7 +102,7 @@ class SpotifyPlaylistService implements PlaylistService {
 	}
 
 	/**
-	 * Obtém o token de acesso ao serviços do Spotify.
+	 * ObtÃ©m o token de acesso ao serviÃ§os do Spotify.
 	 * 
 	 * @see https://developer.spotify.com/web-api/authorization-guide/ Client
 	 *      Credentials Flow

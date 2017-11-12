@@ -21,7 +21,7 @@ import br.com.ifood.backend.advanced.test.error.handling.InvalidCityException;
 import br.com.ifood.backend.advanced.test.error.handling.InvalidGeodingException;
 
 /**
- * Implementação de {@link TemperatureService} utilizando a API do
+ * ImplementaÃ§Ã£o de {@link TemperatureService} utilizando a API do
  * openWeatherMap.
  * 
  * @see https://openweathermap.org/current

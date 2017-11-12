@@ -10,18 +10,18 @@ import org.springframework.stereotype.Repository;
 import br.com.ifood.backend.advanced.test.model.Weather;
 
 /**
- * Repositório de {@link Weather}.
+ * RepositÃ³rio de {@link Weather}.
  */
 @Repository
 public interface WeatherRepository extends PagingAndSortingRepository<Weather, Long> {
 
 	/**
-	 * Retorna uma lista de gêneros musicais em que o parâmetro temperature esteja
+	 * Retorna uma lista de gï¿½neros musicais em que o parï¿½metro temperature esteja
 	 * dentro das faixas de temperatura de {@link Weather}.
 	 * 
 	 * @param temperature
 	 *            temperatura a ser consultada.
-	 * @return uma lista de gêneros musicais em que o parâmetro temperature esteja
+	 * @return uma lista de gï¿½neros musicais em que o parï¿½metro temperature esteja
 	 *         dentro das faixas de temperatura de {@link Weather}.
 	 */
 	@Query("select w.musicGenre from Weather w where w.temperatureIntervalStart <= :temperature and w.temperatureIntervalEnd > :temperature order by name")

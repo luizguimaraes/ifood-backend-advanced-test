@@ -31,20 +31,20 @@ For test and documentation of the API, access the following address:
 http://localhost:8080/playlistSugestion/swagger-ui.html
 
 To access the monitoring services of Spring Actuator (they will require authentication):
-http://localhost:8080/playlistSugestion/admin/health 
-http://localhost:8080/playlistSugestion/admin/env
-http://localhost:8080/playlistSugestion/admin/configprops 
-http://localhost:8080/playlistSugestion/admin/loggers
-http://localhost:8080/playlistSugestion/admin/info
-http://localhost:8080/playlistSugestion/admin/auditevents
-http://localhost:8080/playlistSugestion/admin/liquibase
-http://localhost:8080/playlistSugestion/admin/trace
-http://localhost:8080/playlistSugestion/admin/metrics
-http://localhost:8080/playlistSugestion/admin/dump
-http://localhost:8080/playlistSugestion/admin/beans
-http://localhost:8080/playlistSugestion/admin/heapdump
-http://localhost:8080/playlistSugestion/admin/autoconfig
-http://localhost:8080/playlistSugestion/admin/mappings
+* http://localhost:8080/playlistSugestion/admin/health 
+* http://localhost:8080/playlistSugestion/admin/env
+* http://localhost:8080/playlistSugestion/admin/configprops 
+* http://localhost:8080/playlistSugestion/admin/loggers
+* http://localhost:8080/playlistSugestion/admin/info
+* http://localhost:8080/playlistSugestion/admin/auditevents
+* http://localhost:8080/playlistSugestion/admin/liquibase
+* http://localhost:8080/playlistSugestion/admin/trace
+* http://localhost:8080/playlistSugestion/admin/metrics
+* http://localhost:8080/playlistSugestion/admin/dump
+* http://localhost:8080/playlistSugestion/admin/beans
+* http://localhost:8080/playlistSugestion/admin/heapdump
+* http://localhost:8080/playlistSugestion/admin/autoconfig
+* http://localhost:8080/playlistSugestion/admin/mappings
 
 The user and password is configured in the application.properties
 

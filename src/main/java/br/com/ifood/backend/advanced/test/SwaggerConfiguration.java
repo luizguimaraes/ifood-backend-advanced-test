@@ -24,8 +24,8 @@ public class SwaggerConfiguration {
 	}
 
 	private ApiInfo apiInfo() {
-		return new ApiInfo("API de Sugest„o de playlists",
-				"Esta API provÍ sugest„o de playlists baseado na localizaÁ„o indicada!", "1.0.0", "",
-				new Contact("Luiz Guimar„es", "", "luizccgjr@gmail.com"), "", "", Collections.emptyList());
+		return new ApiInfo("API de Sugest√£o de playlists",
+				"Esta API prov√™ sugest√£o de playlists baseado na localiza√ß√£o indicada!", "1.0.0", "",
+				new Contact("Luiz Guimar√£es", "", "luizccgjr@gmail.com"), "", "", Collections.emptyList());
 	}
 }

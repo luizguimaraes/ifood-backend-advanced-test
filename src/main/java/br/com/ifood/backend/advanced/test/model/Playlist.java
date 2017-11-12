@@ -6,7 +6,7 @@ import java.util.List;
 import org.springframework.core.style.ToStringCreator;
 
 /**
- * Classe que representa o resultado da sugest„o. Uma playlist È definida como
+ * Classe que representa o resultado da sugest√£o. Uma playlist √© definida como
  * uma lista de {@link Track}s.
  */
 public class Playlist {

@@ -11,8 +11,8 @@ public class WebSecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
-		// Configura para que os serviços do SpringActuator sejam acessados mediante
-		// autenticação.
+		// Configura para que os serviÃ§os do SpringActuator sejam acessados mediante
+		// autenticaÃ§Ã£o.
 		http.authorizeRequests().antMatchers("/admin/**").authenticated().and().formLogin().permitAll().and().logout()
 				.permitAll();
 	}

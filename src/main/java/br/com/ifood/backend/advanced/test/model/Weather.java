@@ -10,8 +10,8 @@ import javax.persistence.Id;
 import org.springframework.core.style.ToStringCreator;
 
 /**
- * Entidade que representa uma descrição climática. É identificado por um nome e
- * contém um genero musical associado e uma faixa de temperatura.
+ * Entidade que representa uma descriÃ§Ã£o climÃ¡tica. Ã‰ identificado por um nome e
+ * contÃªm um genero musical associado e uma faixa de temperatura.
  */
 @Entity
 public class Weather {

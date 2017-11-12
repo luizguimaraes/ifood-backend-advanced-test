@@ -5,7 +5,7 @@ import static org.springframework.http.HttpStatus.BAD_REQUEST;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * Exception lanÁada caso o nome da cidade n„o seja v·lido.
+ * Exception lan√ßada caso o nome da cidade n√£o seja v√°lido.
  */
 @ResponseStatus(value = BAD_REQUEST, reason = "city not found.")
 public class InvalidCityException extends RuntimeException {

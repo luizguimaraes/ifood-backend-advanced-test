@@ -5,7 +5,7 @@ import static org.springframework.http.HttpStatus.SERVICE_UNAVAILABLE;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 /**
- * Exception lançada caso ocorra algum erro ao acessar o serviço de temperatura.
+ * Exception lanÃ§ada caso ocorra algum erro ao acessar o serviÃ§o de temperatura.
  */
 @ResponseStatus(value = SERVICE_UNAVAILABLE, reason = "cannot retrieve temperature for your location.")
 public class CannotRetrieveTemperatureException extends RuntimeException {

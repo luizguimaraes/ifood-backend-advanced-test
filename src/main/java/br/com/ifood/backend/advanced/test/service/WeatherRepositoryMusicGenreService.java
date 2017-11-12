@@ -12,13 +12,13 @@ import br.com.ifood.backend.advanced.test.error.handling.GenreNotFoundException;
 import br.com.ifood.backend.advanced.test.repository.WeatherRepository;
 
 /**
- * Implementação de {@link MusicGenreService} que utiliza
- * {@link WeatherRepository} para sugerir gêneros.
+ * ImplementaÃ§Ã£o de {@link MusicGenreService} que utiliza
+ * {@link WeatherRepository} para sugerir gÃªneros.
  */
 @Component
 class WeatherRepositoryMusicGenreService implements MusicGenreService {
 
-	private static final Logger logger = LoggerFactory.getLogger(WeatherRepositoryMusicGenreServiceTest.class);
+	private static final Logger logger = LoggerFactory.getLogger(WeatherRepositoryMusicGenreService.class);
 
 	@Autowired
 	private WeatherRepository weatherRepository;

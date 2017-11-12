@@ -5,18 +5,18 @@ import java.util.List;
 import br.com.ifood.backend.advanced.test.error.handling.GenreNotFoundException;
 
 /**
- * Serviço responsável por sugerir gêneros musicais.
+ * ServiÃ§o responsÃ¡vel por sugerir gÃªneros musicais.
  */
 public interface MusicGenreService {
 
 	/**
-	 * Sugere uma lista de gêneros musicais baseado em uma temperatura.
+	 * Sugere uma lista de gÃªneros musicais baseado em uma temperatura.
 	 * 
 	 * @param temperature
-	 *            a temperatura base para realizar a sugestão.
-	 * @return uma lista de gêneros
+	 *            a temperatura base para realizar a sugestÃ£o.
+	 * @return uma lista de gÃªneros
 	 * @throws GenreNotFoundException
-	 *             caso não seja possível sugerir pelo menos um gênero musical
+	 *             caso nÃ£o seja possÃ­vel sugerir pelo menos um gÃªnero musical
 	 *             baseado na temperatura.
 	 */
 	List<String> musicGenresByTemperature(double temperature) throws GenreNotFoundException;

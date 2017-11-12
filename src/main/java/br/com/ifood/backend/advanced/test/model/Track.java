@@ -11,7 +11,7 @@ import org.springframework.core.style.ToStringCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /**
- * Classe que representa uma faixa musical. É composta pelo nome da faixa, nome
+ * Classe que representa uma faixa musical. Ã‰ composta pelo nome da faixa, nome
  * do album e a lista de nomes dos artistas.
  */
 public class Track {
